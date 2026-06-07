@@ -10,38 +10,58 @@
 
     <header>
         <h1>🍔 Online Food Delivery System</h1>
+
+        <input type="text" id="searchBox"
+               placeholder="🔍 Search Food..."
+               onkeyup="searchFood()">
     </header>
 
     <div class="container">
 
         <div class="card">
-            <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pizza">
+            <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=600">
             <h2>Pizza</h2>
             <p>Price: ₹299</p>
+            <p>⭐⭐⭐⭐⭐ (4.8)</p>
             <button onclick="orderFood('Pizza')">Order Now</button>
         </div>
 
         <div class="card">
-            <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Burger">
+            <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600">
             <h2>Burger</h2>
             <p>Price: ₹149</p>
+            <p>⭐⭐⭐⭐⭐ (4.7)</p>
             <button onclick="orderFood('Burger')">Order Now</button>
         </div>
 
         <div class="card">
-            <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fried Rice">
+            <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600">
             <h2>Fried Rice</h2>
             <p>Price: ₹199</p>
+            <p>⭐⭐⭐⭐⭐ (4.6)</p>
             <button onclick="orderFood('Fried Rice')">Order Now</button>
         </div>
 
         <div class="card">
-            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Veg Thali">
+            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600">
             <h2>Veg Thali</h2>
             <p>Price: ₹249</p>
+            <p>⭐⭐⭐⭐⭐ (4.9)</p>
             <button onclick="orderFood('Veg Thali')">Order Now</button>
         </div>
 
+    </div>
+
+    <div class="address-section">
+        <h2>📍 Delivery Address</h2>
+
+        <input type="text" placeholder="Enter Name"><br><br>
+
+        <input type="text" placeholder="Enter Address"><br><br>
+
+        <input type="text" placeholder="Mobile Number"><br><br>
+
+        <button onclick="placeOrder()">Place Order</button>
     </div>
 
     <script src="script.js"></script>
