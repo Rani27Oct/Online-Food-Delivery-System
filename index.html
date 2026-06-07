@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Food Delivery</title>
+    <title>Online Food Delivery System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Online Food Delivery System</h1>
+    <header>
+        <h1>🍔 Online Food Delivery System</h1>
+    </header>
 
-    <div class="card">
-        <h2>Pizza</h2>
-        <p>Price: ₹299</p>
-        <button onclick="orderFood('Pizza')">Order Now</button>
-    </div>
+    <div class="container">
 
-    <div class="card">
-        <h2>Burger</h2>
-        <p>Price: ₹149</p>
-        <button onclick="orderFood('Burger')">Order Now</button>
-    </div>
+        <div class="card">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <h2>Pizza</h2>
+            <p>Price: ₹299</p>
+            <button onclick="orderFood('Pizza')">Order Now</button>
+        </div>
 
-    <div class="card">
-        <h2>Fried Rice</h2>
-        <p>Price: ₹199</p>
-        <button onclick="orderFood('Fried Rice')">Order Now</button>
+        <div class="card">
+            <img src="images/burger.jpg" alt="Burger">
+            <h2>Burger</h2>
+            <p>Price: ₹149</p>
+            <button onclick="orderFood('Burger')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/friedrice.jpg" alt="Fried Rice">
+            <h2>Fried Rice</h2>
+            <p>Price: ₹199</p>
+            <button onclick="orderFood('Fried Rice')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/biryani.jpg" alt="Biryani">
+            <h2>Chicken Biryani</h2>
+            <p>Price: ₹249</p>
+            <button onclick="orderFood('Chicken Biryani')">Order Now</button>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
